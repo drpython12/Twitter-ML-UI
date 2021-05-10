@@ -1,0 +1,10 @@
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\bin\Debug\Twitter System UI.exe.config
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\bin\Debug\Twitter System UI.exe
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\bin\Debug\Twitter System UI.pdb
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter System UI.csprojAssemblyReference.cache
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter_System_UI.Form1.resources
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter_System_UI.Properties.Resources.resources
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter System UI.csproj.GenerateResource.cache
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter System UI.csproj.CoreCompileInputs.cache
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter System UI.exe
+C:\Users\gandh_pgfvycx\OneDrive\Documents\Programming\NEA\Twitter System UI\obj\Debug\Twitter System UI.pdb
