@@ -92,6 +92,7 @@ namespace Twitter_System_UI
             this.DatabaseButton.Text = "Database";
             this.DatabaseButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.DatabaseButton.UseVisualStyleBackColor = false;
+            this.DatabaseButton.Click += new System.EventHandler(this.DatabaseButton_Click_1);
             this.DatabaseButton.Leave += new System.EventHandler(this.DatabaseButton_Leave);
             // 
             // SettingsButton
@@ -202,7 +203,7 @@ namespace Twitter_System_UI
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(28, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 17);
+            this.label2.Size = new System.Drawing.Size(98, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Time Logged In";
             // 
@@ -245,7 +246,7 @@ namespace Twitter_System_UI
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(499, 19);
+            this.textBox1.Location = new System.Drawing.Point(500, 28);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -265,7 +266,7 @@ namespace Twitter_System_UI
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HomeForm";
-            this.Text = "Form1";
+            this.Text = "Home Page";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

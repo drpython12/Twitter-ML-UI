@@ -85,5 +85,11 @@ namespace Twitter_System_UI
         {
             SettingsButton.BackColor = Color.FromArgb(24, 30, 54);
         }
+
+        private void DatabaseButton_Click_1(object sender, EventArgs e)
+        {
+            DatabaseForm openForm = new DatabaseForm();
+            openForm.Show();
+        }
     }
 }
