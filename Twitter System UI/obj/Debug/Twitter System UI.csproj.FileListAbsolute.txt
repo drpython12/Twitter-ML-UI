@@ -19,3 +19,15 @@ C:\Users\gandh\Source\Repos\drpython12\Twitter-ML-UI\Twitter System UI\obj\Debug
 C:\Users\gandh\Source\Repos\drpython12\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.exe
 C:\Users\gandh\Source\Repos\drpython12\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.pdb
 C:\Users\gandh\Source\Repos\drpython12\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.HomeForm.resources
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\bin\Debug\Twitter System UI.exe.config
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\bin\Debug\Twitter System UI.exe
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\bin\Debug\Twitter System UI.pdb
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.csprojAssemblyReference.cache
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.HomeForm.resources
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.Properties.Resources.resources
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.StreamerForm.resources
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.csproj.GenerateResource.cache
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.csproj.CoreCompileInputs.cache
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.exe
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.pdb
+C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.AnalyserForm.resources

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalyserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalyserForm.Designer.cs">
+      <DependentUpon>AnalyserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     <Compile Include="StreamerForm.Designer.cs">
       <DependentUpon>StreamerForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnalyserForm.resx">
+      <DependentUpon>AnalyserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>

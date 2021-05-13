@@ -19,7 +19,6 @@ namespace Twitter_System_UI
             NavigationPanel.Height = MainMenuButton.Height;
             NavigationPanel.Top = MainMenuButton.Top;
             NavigationPanel.Left = MainMenuButton.Left;
-            MainMenuButton.BackColor = Color.FromArgb(255, 140, 105);
         }
 
         private void MainMenuButton_Click(object sender, EventArgs e)
@@ -44,6 +43,8 @@ namespace Twitter_System_UI
             NavigationPanel.Height = AnalysisButton.Height;
             NavigationPanel.Top = AnalysisButton.Top;
             AnalysisButton.BackColor = Color.FromArgb(255, 140, 105);
+            AnalyserForm openForm = new AnalyserForm();
+            openForm.Show();
         }
 
         private void DatabaseButton_Click(object sender, EventArgs e)

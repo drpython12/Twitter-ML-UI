@@ -30,5 +30,10 @@ namespace Twitter_System_UI
             proStart.StartInfo = process;
             proStart.Start();
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
