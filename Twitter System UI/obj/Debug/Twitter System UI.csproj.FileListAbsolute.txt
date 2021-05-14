@@ -46,3 +46,4 @@ C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\bin\Debug\System.Num
 C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\bin\Debug\MySql.Data.xml
 C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.DatabaseForm.resources
 C:\Users\gandh\Source\Repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter System UI.csproj.CopyComplete
+C:\Users\gandh\source\repos\Twitter-ML-UI\Twitter System UI\obj\Debug\Twitter_System_UI.LoginForm.resources
