@@ -33,6 +33,7 @@ namespace Twitter_System_UI
             this.UploadButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.DatabaseViewButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,18 +75,31 @@ namespace Twitter_System_UI
             this.DatabaseViewButton.UseVisualStyleBackColor = false;
             this.DatabaseViewButton.Click += new System.EventHandler(this.DatabaseViewButton_Click);
             // 
+            // CloseButton
+            // 
+            this.CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
+            this.CloseButton.ForeColor = System.Drawing.Color.White;
+            this.CloseButton.Location = new System.Drawing.Point(450, 444);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(105, 37);
+            this.CloseButton.TabIndex = 4;
+            this.CloseButton.Text = "Close";
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
             // DatabaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1000, 619);
+            this.ClientSize = new System.Drawing.Size(794, 534);
+            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.DatabaseViewButton);
             this.Controls.Add(this.UploadButton);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DatabaseForm";
             this.Text = "DatabaseForm";
             this.ResumeLayout(false);
@@ -99,5 +113,6 @@ namespace Twitter_System_UI
         private System.Windows.Forms.Button UploadButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button DatabaseViewButton;
+        private System.Windows.Forms.Button CloseButton;
     }
 }

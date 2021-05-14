@@ -19,6 +19,14 @@ namespace Twitter_System_UI
             NavigationPanel.Height = MainMenuButton.Height;
             NavigationPanel.Top = MainMenuButton.Top;
             NavigationPanel.Left = MainMenuButton.Left;
+            HomeChart.Titles.Add("FK Score Breakdown Of Hate Tweets");
+            HomeChart.BackColor = Color.FromArgb(46, 51, 73);
+            HomeChart.Series["FK Scores"].Points.AddXY("31-50", "4.8");
+            HomeChart.Series["FK Scores"].Points.AddXY("51-60", "6.3");
+            HomeChart.Series["FK Scores"].Points.AddXY("61-70", "9.5");
+            HomeChart.Series["FK Scores"].Points.AddXY("71-80", "19.0");
+            HomeChart.Series["FK Scores"].Points.AddXY("81-90", "28.6");
+            HomeChart.Series["FK Scores"].Points.AddXY("91-100", "30.2");
         }
 
         private void MainMenuButton_Click(object sender, EventArgs e)
@@ -54,13 +62,6 @@ namespace Twitter_System_UI
             DatabaseButton.BackColor = Color.FromArgb(255, 140, 105);
         }
 
-        private void SettingsButton_Click(object sender, EventArgs e)
-        {
-            NavigationPanel.Height = SettingsButton.Height;
-            NavigationPanel.Top = SettingsButton.Top;
-            SettingsButton.BackColor = Color.FromArgb(255, 140, 105);
-        }
-
         private void MainMenuButton_Leave(object sender, EventArgs e)
         {
             MainMenuButton.BackColor = Color.FromArgb(24, 30, 54);
@@ -81,13 +82,11 @@ namespace Twitter_System_UI
             DatabaseButton.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        private void SettingsButton_Leave(object sender, EventArgs e)
-        {
-            SettingsButton.BackColor = Color.FromArgb(24, 30, 54);
-        }
-
         private void DatabaseButton_Click_1(object sender, EventArgs e)
         {
+            NavigationPanel.Height = DatabaseButton.Height;
+            NavigationPanel.Top = DatabaseButton.Top;
+            DatabaseButton.BackColor = Color.FromArgb(255, 140, 105);
             DatabaseForm openForm = new DatabaseForm();
             openForm.Show();
         }

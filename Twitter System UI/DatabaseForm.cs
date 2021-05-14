@@ -54,5 +54,10 @@ namespace Twitter_System_UI
             }
 
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -29,10 +29,14 @@ namespace Twitter_System_UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NavigationPanel = new System.Windows.Forms.Panel();
             this.DatabaseButton = new System.Windows.Forms.Button();
-            this.SettingsButton = new System.Windows.Forms.Button();
             this.AnalysisButton = new System.Windows.Forms.Button();
             this.StreamerButton = new System.Windows.Forms.Button();
             this.MainMenuButton = new System.Windows.Forms.Button();
@@ -41,10 +45,13 @@ namespace Twitter_System_UI
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.HomeChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.analyserFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomeChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.analyserFormBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,7 +59,6 @@ namespace Twitter_System_UI
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.NavigationPanel);
             this.panel1.Controls.Add(this.DatabaseButton);
-            this.panel1.Controls.Add(this.SettingsButton);
             this.panel1.Controls.Add(this.AnalysisButton);
             this.panel1.Controls.Add(this.StreamerButton);
             this.panel1.Controls.Add(this.MainMenuButton);
@@ -94,28 +100,6 @@ namespace Twitter_System_UI
             this.DatabaseButton.UseVisualStyleBackColor = false;
             this.DatabaseButton.Click += new System.EventHandler(this.DatabaseButton_Click_1);
             this.DatabaseButton.Leave += new System.EventHandler(this.DatabaseButton_Leave);
-            // 
-            // SettingsButton
-            // 
-            this.SettingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.SettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SettingsButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SettingsButton.FlatAppearance.BorderSize = 0;
-            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SettingsButton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsButton.Image = global::Twitter_System_UI.Properties.Resources.settings;
-            this.SettingsButton.Location = new System.Drawing.Point(0, 511);
-            this.SettingsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(165, 48);
-            this.SettingsButton.TabIndex = 1;
-            this.SettingsButton.Text = "Settings";
-            this.SettingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.SettingsButton.UseVisualStyleBackColor = false;
-            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
-            this.SettingsButton.Leave += new System.EventHandler(this.SettingsButton_Leave);
             // 
             // AnalysisButton
             // 
@@ -233,26 +217,37 @@ namespace Twitter_System_UI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
             this.label3.Location = new System.Drawing.Point(179, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(215, 44);
             this.label3.TabIndex = 2;
             this.label3.Text = "Main Menu";
             // 
-            // textBox1
+            // HomeChart
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(500, 28);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 35);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Searchbar...";
+            this.HomeChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            chartArea1.Name = "ChartArea1";
+            this.HomeChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.HomeChart.Legends.Add(legend1);
+            this.HomeChart.Location = new System.Drawing.Point(248, 123);
+            this.HomeChart.Name = "HomeChart";
+            this.HomeChart.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "FK Scores";
+            this.HomeChart.Series.Add(series1);
+            this.HomeChart.Size = new System.Drawing.Size(470, 382);
+            this.HomeChart.TabIndex = 4;
+            title1.ForeColor = System.Drawing.Color.White;
+            title1.Name = "Title1";
+            this.HomeChart.Titles.Add(title1);
+            // 
+            // analyserFormBindingSource
+            // 
+            this.analyserFormBindingSource.DataSource = typeof(Twitter_System_UI.AnalyserForm);
             // 
             // HomeForm
             // 
@@ -260,7 +255,7 @@ namespace Twitter_System_UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(846, 559);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.HomeChart);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -271,6 +266,8 @@ namespace Twitter_System_UI
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomeChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.analyserFormBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,12 +282,12 @@ namespace Twitter_System_UI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button DatabaseButton;
-        private System.Windows.Forms.Button SettingsButton;
         private System.Windows.Forms.Button AnalysisButton;
         private System.Windows.Forms.Button StreamerButton;
         private System.Windows.Forms.Panel NavigationPanel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart HomeChart;
+        private System.Windows.Forms.BindingSource analyserFormBindingSource;
     }
 }
 
