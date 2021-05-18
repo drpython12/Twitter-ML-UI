@@ -23,7 +23,7 @@ namespace Twitter_System_UI
         {
             openFileDialog1.ShowDialog();
             string uploadFilename = openFileDialog1.FileName;
-            string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Database.py {0}", uploadFilename);
+            string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Database.py w {0}", uploadFilename);
             ProcessStartInfo process = new ProcessStartInfo();
             process.FileName = "cmd.exe";
             process.Arguments = args;
@@ -36,25 +36,13 @@ namespace Twitter_System_UI
 
         private void DatabaseViewButton_Click(object sender, EventArgs e)
         {
-            runQuery();
-        }
-
-        private void runQuery()
-        {
-            string query = "SELECT * FROM User, Tweet, TweetEntities, TweetAnalysis";
-            string MySQLConnection = "datasource=127.0.0.1;port=3306;username=root;password=Palashg12;database=TwitterMachineLearningDatabase";
-            MySqlConnection databaseConnection = new MySqlConnection(MySQLConnection);
-            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-
-            try
-            {
-                databaseConnection.Open();
-                MySqlDataReader myReader = commandDatabase.ExecuteReader();
-            }catch(Exception e)
-            {
-                MessageBox.Show("Query Error: " + e.Message);
-            }
-
+            string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Database.py r");
+            ProcessStartInfo process = new ProcessStartInfo();
+            process.FileName = "cmd.exe";
+            process.Arguments = args;
+            Process proStart = new Process();
+            proStart.StartInfo = process;
+            proStart.Start();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
