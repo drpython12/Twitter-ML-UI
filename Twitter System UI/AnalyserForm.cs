@@ -26,8 +26,8 @@ namespace Twitter_System_UI
         private void RunButton_Click(object sender, EventArgs e)
         {
             string importFilename = openFileDialog1.FileName;
-            string exportFilename = ExportFileBox.Text;
-            string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Classifier.py {0}", importFilename);
+            string exportFilename = ExportFileBox.Text + ".csv";
+            string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Classifier.py {0} {1}", importFilename, exportFilename);
             ProcessStartInfo process = new ProcessStartInfo();
             process.FileName = "cmd.exe";
             process.Arguments = args;

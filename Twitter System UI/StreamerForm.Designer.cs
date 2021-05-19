@@ -21,8 +21,6 @@ namespace Twitter_System_UI
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -130,8 +128,6 @@ namespace Twitter_System_UI
             this.PerformLayout();
 
         }
-
-        #endregion
 
         private System.Windows.Forms.Label LabelNumOfTweets;
         private System.Windows.Forms.TextBox BoxNumOfTweets;
