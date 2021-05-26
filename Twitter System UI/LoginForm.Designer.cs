@@ -27,29 +27,16 @@ namespace Twitter_System_UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.Textbox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
             this.UsernameTextbox = new System.Windows.Forms.TextBox();
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.LoginLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // Textbox1
-            // 
-            this.Textbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Textbox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Textbox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
-            this.Textbox1.Location = new System.Drawing.Point(141, 53);
-            this.Textbox1.Multiline = true;
-            this.Textbox1.Name = "Textbox1";
-            this.Textbox1.Size = new System.Drawing.Size(139, 49);
-            this.Textbox1.TabIndex = 0;
-            this.Textbox1.Text = " LOG IN";
             // 
             // panel1
             // 
@@ -59,19 +46,6 @@ namespace Twitter_System_UI
             this.panel1.Size = new System.Drawing.Size(290, 1);
             this.panel1.TabIndex = 1;
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
-            this.textBox2.Location = new System.Drawing.Point(26, 168);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(110, 29);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Username";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
@@ -79,19 +53,6 @@ namespace Twitter_System_UI
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(290, 1);
             this.panel3.TabIndex = 3;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
-            this.textBox4.Location = new System.Drawing.Point(26, 295);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(110, 29);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Password";
             // 
             // LoginButton
             // 
@@ -141,21 +102,54 @@ namespace Twitter_System_UI
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // LoginLabel
+            // 
+            this.LoginLabel.AutoSize = true;
+            this.LoginLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
+            this.LoginLabel.Location = new System.Drawing.Point(140, 60);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(122, 38);
+            this.LoginLabel.TabIndex = 9;
+            this.LoginLabel.Text = "LOG IN";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
+            this.label1.Location = new System.Drawing.Point(26, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 22);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Username";
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(105)))));
+            this.PasswordLabel.Location = new System.Drawing.Point(26, 295);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(90, 22);
+            this.PasswordLabel.TabIndex = 11;
+            this.PasswordLabel.Text = "Password";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(420, 563);
+            this.Controls.Add(this.PasswordLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.PasswordTextbox);
             this.Controls.Add(this.UsernameTextbox);
             this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Textbox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -164,14 +158,14 @@ namespace Twitter_System_UI
             this.PerformLayout();
 
         }
-        private System.Windows.Forms.TextBox Textbox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.TextBox UsernameTextbox;
         private System.Windows.Forms.TextBox PasswordTextbox;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PasswordLabel;
     }
 }
