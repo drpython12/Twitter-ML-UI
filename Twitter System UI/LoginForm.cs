@@ -15,22 +15,33 @@ namespace Twitter_System_UI
         public LoginForm()
         {
             InitializeComponent();
+            UsernameTextbox.Focus();
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (UsernameTextbox.Text == "employee" && PasswordTextbox.Text == "employee")
+            if (UsernameTextbox.Text == "" || PasswordTextbox.Text == "")
             {
-                new HomeForm().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Username or password is incorrect!");
+                MessageBox.Show("Please enter values for username and password");
                 UsernameTextbox.Clear();
                 PasswordTextbox.Clear();
                 UsernameTextbox.Focus();
             }
+            else
+            {
+                if (UsernameTextbox.Text == "employee" && PasswordTextbox.Text == "employee")
+                {
+                    new HomeForm().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Username or password is incorrect!");
+                    UsernameTextbox.Clear();
+                    PasswordTextbox.Clear();
+                    UsernameTextbox.Focus();
+                }
+            } 
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

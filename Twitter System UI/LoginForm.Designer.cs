@@ -88,6 +88,7 @@ namespace Twitter_System_UI
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(218, 22);
             this.PasswordTextbox.TabIndex = 7;
+            this.PasswordTextbox.UseSystemPasswordChar = true;
             // 
             // ExitButton
             // 
