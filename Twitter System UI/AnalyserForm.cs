@@ -30,21 +30,28 @@ namespace Twitter_System_UI
             string fileEnding = System.IO.Path.GetExtension(importFilename);
             if (fileEnding == ".csv")
             {
-                string exportFilename = ExportFileBox.Text + ".csv";
-                string filePath = System.IO.Path.GetFullPath(exportFilename);
-                if (System.IO.File.Exists(filePath))
+                if (String.IsNullOrEmpty(ExportFileBox.Text))
                 {
-                    MessageBox.Show("Filename already exists, please choose another file...");
+                    MessageBox.Show("Please enter name of file to store the results in.");
                 }
                 else
                 {
-                    string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Classifier.py {0} {1}", importFilename, exportFilename);
-                    ProcessStartInfo process = new ProcessStartInfo();
-                    process.FileName = "cmd.exe";
-                    process.Arguments = args;
-                    Process proStart = new Process();
-                    proStart.StartInfo = process;
-                    proStart.Start();
+                    string exportFilename = ExportFileBox.Text + ".csv";
+                    string filePath = System.IO.Path.GetFullPath(exportFilename);
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        MessageBox.Show("Filename already exists, please choose another file...");
+                    }
+                    else
+                    {
+                        string args = string.Format(@"/k cd C:\Users\gandh\OneDrive\Documents\Programming\NEA\ML-Twitter-Hate-Speech-Detection & python Classifier.py {0} {1}", importFilename, exportFilename);
+                        ProcessStartInfo process = new ProcessStartInfo();
+                        process.FileName = "cmd.exe";
+                        process.Arguments = args;
+                        Process proStart = new Process();
+                        proStart.StartInfo = process;
+                        proStart.Start();
+                    }
                 }
             }
         }
