@@ -47,7 +47,7 @@ namespace Twitter_System_UI
                     }
                     else
                     {
-                        MessageBox.Show("Please choose a file that has not already been uploaded to the database!");
+                        MessageBox.Show("Some data from the file may already be on the database or there may be some missing data, please try again.");
                     }
                 }
                 catch (Exception c)
