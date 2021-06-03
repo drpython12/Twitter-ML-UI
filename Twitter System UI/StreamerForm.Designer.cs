@@ -62,12 +62,12 @@ namespace Twitter_System_UI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 248);
+            this.label2.Location = new System.Drawing.Point(61, 243);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(323, 44);
+            this.label2.Size = new System.Drawing.Size(356, 66);
             this.label2.TabIndex = 2;
-            this.label2.Text = "List of keywords to query tweets with:\r\n(comma separated)";
+            this.label2.Text = "Optional list of keywords to query tweets \r\nwith:\r\n(comma separated)";
             // 
             // RunButton
             // 
